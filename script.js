@@ -1,5 +1,5 @@
 const img = document.querySelector("img");
-const btnNewImage = document.querySelector("#new-image");
+const btnNewImage = document.querySelector("#btn-search");
 const inputField = document.querySelector("#input-field");
 const errorMessageField = document.querySelector(".error-message");
 
@@ -26,4 +26,3 @@ async function getData(gifsName = "cats") {
     }
   }
 }
-getData();

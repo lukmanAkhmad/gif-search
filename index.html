@@ -3,14 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Gif</title>
+    <title>Gif Search</title>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <label for="input-field">Search Gifs:</label>
-    <input type="text" id="input-field" name="input-field" />
-    <button id="new-image">New Image</button>
-    <span class="error-message"></span>
-    <img src="#" alt="" />
+    <div id="container">
+      <div id="header-container">
+        <h1 class="txt-header">Gif Search</h1>
+      </div>
+      <section class="section-input">
+        <label for="input-field" class="label-input">Keyword: </label>
+        <input type="text" id="input-field" name="input-field" />
+      </section>
+      <section class="section-btn">
+        <button id="btn-search" type="button">Search</button>
+      </section>
+      <span class="error-message"></span>
+      <div id="container-img">
+        <img class="img-field" src="#" alt="" />
+      </div>
+    </div>
   </body>
 </html>

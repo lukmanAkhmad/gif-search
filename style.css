@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+#container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 9px;
+  width: 573px;
+  height: 693px;
+  margin-top: 99px;
+  gap: 21px;
+  background-color: black;
+}
+#header-container {
+  background: black;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 5px;
+}
+.txt-header {
+  color: white;
+  font-size: 39px;
+}
+.label-input {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+#input-field {
+  background-color: black;
+  color: white;
+  width: 293px;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  outline: none;
+}
+#btn-search {
+  background-color: black;
+  height: 30px;
+  width: 90px;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.error-message {
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+}
+#container-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  height: 434px;
+  width: 541px;
+  border-radius: 9px;
+}
+.img-field {
+  max-height: 378px;
+  max-width: 417px;
+  border-radius: 9px;
+}
