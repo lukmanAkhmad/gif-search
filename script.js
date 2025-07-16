@@ -12,11 +12,18 @@ btnNewImage.addEventListener("click", () => {
 });
 
 async function getData(gifsName = "cats") {
-  const response = await fetch(
-    `https://api.giphy.com/v1/gifs/translate?api_key=xDfaUM063KEUbwjvfGC2bYo7XF09utMC&s=${gifsName}`,
-    { mode: "cors" }
-  );
-  const promiseResponse = await response.json();
-  img.src = promiseResponse.data.images.original.url;
+  try {
+    const response = await fetch(
+      `https://api.giphy.com/v1/gifs/translate?api_key=xDfaUM063KEUbwjvfGC2bYo7XF09utMC&s=${gifsName}`,
+      { mode: "cors" }
+    );
+    const promiseResponse = await response.json();
+    img.src = promiseResponse.data.images.original.url;
+  } catch (err) {
+    console.log(err);
+    if (err instanceof TypeError) {
+      errorMessageField.textContent = "Keyword Not Found!";
+    }
+  }
 }
 getData();
